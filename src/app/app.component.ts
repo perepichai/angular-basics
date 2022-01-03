@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-basic';
+  title: string = 'Basic Task';
+  desc: string = 'This is homepage';
 }
