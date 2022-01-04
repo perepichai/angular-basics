@@ -1,10 +1,9 @@
-  <header>
-    <h1>{{ title }}</h1>
-    <nav class="nav">
-      <ul>
-        <li><a routerLink="">Home</a></li>
-        <li><a routerLink="/about">About</a></li>
-        <li><a routerLink="/contacts">Contacts</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <h1>{{ title }}</h1>
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="">Home</button>
+    <button mat-menu-item routerLink="/about">About</button>
+    <button mat-menu-item routerLink="/contacts">Contacts</button>
+  </mat-menu>
+</header>
