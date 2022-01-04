@@ -1,12 +1,16 @@
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-header nav {
+header nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0 24px;
+    padding-inline-start: unset;
+    list-style-type: none;
 }
 h1 {
     text-align: center;
